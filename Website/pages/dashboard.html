@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+    </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <title>StockSense | Smart AI Trading</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="navbar">
+            <h1 class="title">Stock<span>Sense
+                    <span class="material-symbols-sharp">
+                        monitoring
+                    </span>
+                </span>
+            </h1>
+            <a class="dashboard" href="{{ url_for('dashboard') }}">
+                <span class="material-symbols-sharp">
+                    dashboard
+                </span>
+                <h3 class="name">
+                    Dashboard
+                </h3>
+            </a>
+            <a class="my-stock" href="{{ url_for('my_stocks') }}">
+                <span class="material-symbols-sharp">
+                    fact_check
+                </span>
+                <h3 class="name">
+                    My Stocks
+                </h3>
+            </a>
+            <a class="news" href="{{ url_for('news') }}">
+                <span class="material-symbols-sharp">
+                    brand_awareness
+                </span>
+                <h3 class="name"> News
+                </h3>
+            </a>
+            <a class="user">
+                <span class="material-symbols-sharp">
+                    login
+                </span>
+                <h3 class="name">
+                    Login
+                </h3>
+            </a>
+        </aside>
+        <main>
+            <div class="stock-selector">
+                <label for="stock-tickers">Select a Stock : </label>
+                <select name="stock-ticker" id="stock-selection">
+                    <option value=""></option>
+                </select>
+                <button class="add-my-stocks">
+                    <span class="material-symbols-sharp">add</span>
+                    Add to my stocks
+                </button>
+            </div>
+            <div class="stock-name">
+                <h1 id="selected-stock"></h1>
+            </div>
+            <div class="ts-plot" id="chart">
+
+            </div>
+            <div class="info-cards">
+                <div class="stats">
+                    <h1>Stock Value <span class="date" id="date"></span></h1>
+                    <ul>
+                        <li class="type">Open:<span id="open"></span></li>
+                        <li class="type">Close:<span id="close"></span></li>
+                        <li class="type">High:<span id="high"></span></li>
+                        <li class="type">Low:<span id="low"></span></li>
+                        <li class="type">Volume:<span id="volume"></span></li>
+                    </ul>
+                </div>
+                <div class="preds">
+                    <h1>Forecasted Value</h1>
+                    <div class="forecast-text">Future days to forecast:
+                        <input type="number" class="daysInp" id="daysInp" min="1">
+                        <input type="submit" name="submit" class="submit" id="submit" onclick="forecast()">
+                    </div>
+                    <div class="forecast" id="forecast"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/home.js"></script>
+</body>
+
+</html>

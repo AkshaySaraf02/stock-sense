@@ -1,0 +1,234 @@
+:root {
+    --black: #010101;
+    --dark-grey: #000000;
+    --light-grey: #292929;
+    --red: #3198d4;
+    --box-shadow: 40px 10px 60px -60px rgb(0, 0, 0);
+}
+
+html {
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--black);
+    color: #ececec;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20rem 30rem;
+}
+
+.navbar {
+    margin-top: 1rem;
+    /*add in other css*/
+    background-color: var(--light-grey);
+    width: 13.2rem;
+    height: 95vh;
+    align-items: center;
+    border-radius: 40px;
+    inset: 0px 0px 20px 10px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    margin-left: 0.8rem;
+    position: sticky;
+
+}
+
+.navbar:hover {
+    box-shadow: none;
+}
+
+.navbar a {
+    padding: 8px 5px 8px 40px;
+    display: flex;
+    align-items: center;
+    font-size: smaller;
+    font-weight: 100;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #ececec;
+}
+
+.navbar a:hover {
+    color: var(--red);
+    padding-left: 4rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar .user {
+    position: absolute;
+    bottom: 3rem;
+}
+
+.navbar .dashboard {
+    background-color: #3198d4;
+    border-radius: 50px;
+}
+
+.navbar .dashboard:hover {
+    color: #ececec;
+}
+
+.title {
+    margin-left: 0.1rem;
+    width: max-content;
+    padding: 1.5rem 17px;
+    border-radius: 40px;
+}
+
+.title .material-symbols-sharp {
+    font-size: 2rem;
+    text-align: center;
+    justify-items: center;
+}
+
+.title span {
+    color: var(--red);
+}
+
+.stock-selector {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: max-content;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.stock-selector .add-my-stocks {
+    display: flex;
+    margin-left: 26rem;
+    align-items: center;
+    justify-items: center;
+    border: none;
+    border-radius: 8px;
+    font-family: "Poppins", "Sans-serif";
+    font-weight: bold;
+    gap: 5px;
+}
+
+.stock-selector select {
+    width: 20rem;
+    height: 2rem;
+    font-size: large;
+    background-color: rgb(31, 30, 30);
+    border-radius: 20px;
+    color: #ececec;
+}
+
+.stock-selector button {
+    color: #ececec;
+    background: #333333;
+}
+
+.stock-selector button:hover {
+    color: var(--red)
+}
+
+.ts-plot {
+    overflow: hidden;
+    border: 1px solid grey;
+    background-color: var(--light-grey);
+    margin-top: 0.5rem;
+    height: 18rem;
+    width: 70vw;
+    border-radius: 24px;
+}
+
+.stock-name {
+    color: var(--red);
+}
+
+.info-cards {
+    display: flex;
+    width: 70vw;
+    gap: 1rem;
+}
+
+.info-cards h1 {
+    padding-left: 2rem;
+    padding-top: 0rem;
+}
+
+.info-cards .stats {
+    background-color: var(--light-grey);
+    margin-top: 2rem;
+    border-radius: 24px;
+    padding: 0.1rem 0px 0.4rem 0.1rem;
+    width: 35vw;
+    margin-right: 1rem;
+}
+
+.info-cards .stats ul {
+    list-style: none;
+}
+
+.info-cards .stats ul li {
+    gap: 1rem;
+    padding-bottom: 12px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.info-cards .stats ul li span {
+    font-weight: 100;
+    font-size: large;
+    padding-left: 3rem;
+    text-align: center;
+}
+
+.info-cards .stats span {
+    font-size: 0.9rem;
+    padding-left: 12rem;
+}
+
+
+.info-cards .preds {
+    background-color: var(--light-grey);
+    margin-top: 2rem;
+    border-radius: 24px;
+    padding: 0.1rem 0px 0.4rem 0.1rem;
+    width: 35vw;
+}
+
+.info-cards .preds .forecast-text {
+    padding-left: 3rem;
+}
+
+.info-cards .preds .forecast-text .daysInp {
+    width: 8rem;
+    height: 1.5rem;
+    margin-left: 2rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: large;
+    padding-left: 1rem;
+    background-color: lightgrey;
+    font-weight: bold;
+    font-style: "Poppins", "Sans-serif";
+}
+
+.info-cards .preds .forecast-text .submit {
+    width: 4rem;
+    border: black;
+    height: 1.5rem;
+    border-radius: 2rem;
+    font-style: "Poppins", "Sans-serif";
+    cursor: pointer;
+    background-color: lightgrey;
+    font-weight: bold;
+}
+
+.info-cards .preds .forecast-text .submit:hover {
+    background-color: #3198d4;
+    color: white;
+}
+
+.info-cards .preds .forecast {
+    /* margin-left: 5rem;*/
+    margin-top: 3rem;
+    padding-left: 7.6rem;
+
+    font-size: 60px;
+}
