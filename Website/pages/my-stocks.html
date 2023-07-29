@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/my-stocks.css">
+    <title>StockSense | Smart AI Trading</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="navbar">
+            <h1 class="title">Stock<span>Sense
+                    <span class="material-symbols-sharp">
+                        monitoring
+                    </span>
+                </span>
+            </h1>
+            <a class="dashboard" href="{{ url_for('dashboard') }}">
+                <span class="material-symbols-sharp">
+                    dashboard
+                </span>
+                <h3 class="name">
+                    Dashboard
+                </h3>
+            </a>
+            <a class="my-stock" href="{{ url_for('my_stocks') }}">
+                <span class="material-symbols-sharp">
+                    fact_check
+                </span>
+                <h3 class="name">
+                    My Stocks
+                </h3>
+            </a>
+            <a class="news" href="{{ url_for('news') }}">
+                <span class="material-symbols-sharp">
+                    brand_awareness
+                </span>
+                <h3 class="name"> News
+                </h3>
+            </a>
+            <a class="user">
+                <span class="material-symbols-sharp">
+                    login
+                </span>
+                <h3 class="name">
+                    Login
+                </h3>
+            </a>
+        </aside>
+        <main>
+        </main>
+    </div>
+    <script src="../assets/js/home.js"></script>
+</body>
+
+</html>

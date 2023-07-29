@@ -1,0 +1,149 @@
+:root {
+    --black: #010101;
+    --dark-grey: #000000;
+    --light-grey: #292929;
+    --red: #3198d4;
+    --box-shadow: 40px 10px 60px -60px rgb(0, 0, 0);
+}
+
+html {
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--black);
+    color: #ececec;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20rem 30rem;
+}
+
+
+.navbar {
+    margin-top: 1rem;
+    background-color: var(--light-grey);
+    width: 13.2rem;
+    height: 95vh;
+    align-items: center;
+    border-radius: 40px;
+    inset: 0px 0px 20px 10px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    margin-left: 0.8rem;
+    position: sticky;
+    top: 0;
+}
+
+.navbar:hover {
+    box-shadow: none;
+}
+
+.navbar a {
+    padding: 8px 5px 8px 40px;
+    display: flex;
+    align-items: center;
+    font-size: smaller;
+    font-weight: 100;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #ececec;
+}
+
+.navbar a:hover {
+    color: var(--red);
+    padding-left: 4rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar .user {
+    position: absolute;
+    bottom: 3rem;
+}
+
+.navbar .news {
+    background-color: #3198d4;
+    border-radius: 50px;
+}
+
+.navbar .news:hover {
+    color: #ececec;
+}
+
+.title {
+    margin-left: 0.1rem;
+    width: max-content;
+    padding: 1.5rem 17px;
+    border-radius: 40px;
+}
+
+.title .material-symbols-sharp {
+    font-size: 2rem;
+    text-align: center;
+    justify-items: center;
+}
+
+.title span {
+    color: var(--red);
+}
+
+.newsInp {
+    width: 50rem;
+}
+
+.newsInp .news {
+    background-color: var(--light-grey);
+    border-radius: 20px;
+    border-style: none;
+    width: 50%;
+    height: 3rem;
+    color: white;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.newsInp .newsSubmit {
+    height: 3rem;
+    width: 5rem;
+    border-radius: 20px;
+    border-style: none;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.newsInp .newsSubmit:hover {
+    background-color: var(--red);
+    color: white;
+    height: 3.3rem;
+    width: 5.3rem;
+}
+
+.head-main {
+    width: 67rem;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: rgb(0, 60, 95);
+    margin-bottom: 3rem;
+    font-size: larger;
+}
+
+.headlines .info-div {
+    padding-top: 1.7rem;
+}
+
+.headlines .info-div .details {
+    font-weight: bold;
+}
+
+.headlines .info-div .values {
+    padding-right: 2rem;
+}
+
+.top-headline {
+    display: none;
+
+}
