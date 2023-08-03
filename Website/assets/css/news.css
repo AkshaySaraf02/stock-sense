@@ -1,17 +1,17 @@
 :root {
-    --black: #010101;
-    --dark-grey: #000000;
-    --light-grey: #292929;
-    --red: #3198d4;
-    --box-shadow: 40px 10px 60px -60px rgb(0, 0, 0);
+    --white: #f6f6f9;
+    --light-white: #fff;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --blue: #3198d4;
+    --box-shadow: 0 2rem 3rem 1rem var(--color-light);
 }
 
 html {
     margin: 0 0;
     padding: 0 0;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--black);
-    color: #ececec;
+    background-color: var(--white);
+    color: #000000;
 }
 
 .container {
@@ -22,12 +22,12 @@ html {
 
 .navbar {
     margin-top: 1rem;
-    background-color: var(--light-grey);
+    background-color: var(--light-white);
     width: 13.2rem;
     height: 95vh;
     align-items: center;
     border-radius: 40px;
-    inset: 0px 0px 20px 10px rgba(0, 0, 0, 0.6);
+    box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
     margin-left: 0.8rem;
     position: sticky;
@@ -46,11 +46,11 @@ html {
     font-weight: 100;
     gap: 0.5rem;
     text-decoration: none;
-    color: #ececec;
+    color: black;
 }
 
 .navbar a:hover {
-    color: var(--red);
+    color: var(--blue);
     padding-left: 4rem;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -64,10 +64,15 @@ html {
 .navbar .news {
     background-color: #3198d4;
     border-radius: 50px;
+    color: var(--white);
 }
 
 .navbar .news:hover {
     color: #ececec;
+}
+
+main h1 {
+    color: var(--blue);
 }
 
 .title {
@@ -84,7 +89,7 @@ html {
 }
 
 .title span {
-    color: var(--red);
+    color: var(--blue);
 }
 
 .newsInp {
@@ -94,13 +99,13 @@ html {
 .newsInp .news {
     background-color: var(--light-grey);
     border-radius: 20px;
-    border-style: none;
     width: 50%;
     height: 3rem;
-    color: white;
+    color: black;
     padding-left: 20px;
     font-size: 1.2rem;
     font-weight: bolder;
+    border: 2px solid black;
 }
 
 .newsInp .newsSubmit {
@@ -116,7 +121,7 @@ html {
 }
 
 .newsInp .newsSubmit:hover {
-    background-color: var(--red);
+    background-color: var(--blue);
     color: white;
     height: 3.3rem;
     width: 5.3rem;
@@ -126,7 +131,8 @@ html {
     width: 67rem;
     border-radius: 10px;
     padding: 10px 15px;
-    background-color: rgb(0, 60, 95);
+    background-color: var(--blue);
+    color: white;
     margin-bottom: 3rem;
     font-size: larger;
 }

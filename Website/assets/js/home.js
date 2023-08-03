@@ -49,7 +49,7 @@ function drawChart(data) {
         const low = document.getElementById("low")
         const volume = document.getElementById("volume")
 
-        currDate.textContent = date;
+        currDate.textContent = "As on " + " " + date;
         open.textContent = values.open + " (USD)";
         close.textContent = values.close + " (USD)";
         high.textContent = values.high + " (USD)";
@@ -66,7 +66,7 @@ function drawChart(data) {
     // Set options for the chart
     const options = {
         title: 'Stock Close Prices',
-        titleTextStyle: { color: "#cccccc" },
+        titleTextStyle: { color: "black" },
         curveType: 'function',
         legend: {
             position: 'top',
@@ -75,23 +75,23 @@ function drawChart(data) {
         },
         hAxis: {
             title: "Date",
-            titleTextStyle: { color: "a8a8a8" },
+            titleTextStyle: { color: "black" },
             format: 'MMM dd, yyyy', // Format the date display
             gridlines: { color: 'transparent' },
             textStyle: {
-                color: '#a8a8a8' // Set the text color for the y-axis
+                color: 'a8a8a8' // Set the text color for the y-axis
             }
         },
-        backgroundColor: 'black',
+        backgroundColor: 'white',
         vAxis: {
             title: "USD",
-            titleTextStyle: { color: "a8a8a8" },
+            titleTextStyle: { color: "black" },
             gridlines: { color: 'transparent' }, // Set vAxis gridlines color to transparent
             textStyle: {
-                color: '#a8a8a8' // Set the text color for the y-axis
+                color: 'a8a8a8' // Set the text color for the y-axis
             },
         },
-        colors: ["#3198d4"]
+        colors: ["black"]
     };
 
     // Instantiate and draw the chart
@@ -103,9 +103,25 @@ function drawChart(data) {
 function forecast() {
     const future_days = document.getElementById("daysInp").value
     const forecastText = document.getElementById("forecast")
-
+    console.log("Fetching")
     fetch(`/forecast_prices?days=${future_days}`)
         .then(fcstResponse => fcstResponse.json()).then(fcst => {
-            forecastText.textContent = fcst
+            forecastText.textContent = fcst;
+            console.log("Fetched Successfully")
+
         })
+}
+
+
+function add_stock() {
+    const add_btn = document.getElementById("add-stock");
+    if (selectedStock.textContent != "") {
+        // add_btn.style.transition = "all 0.3s ease";
+        add_btn.textContent = "Stock Added";
+        add_btn.style.backgroundColor = "#26A65B";
+        add_btn.style.color = "white"
+        add_btn.style.marginLeft = "30rem"
+    }
+    else {
+    }
 }

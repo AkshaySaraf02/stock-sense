@@ -1,31 +1,35 @@
 :root {
-    --black: #010101;
-    --dark-grey: #000000;
-    --light-grey: #292929;
-    --red: #3198d4;
-    --box-shadow: 40px 10px 60px -60px rgb(0, 0, 0);
+    --white: #f6f6f9;
+    --light-white: #fff;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --blue: #3198d4;
+    --box-shadow: 0 2rem 3rem 1rem var(--color-light);
 }
 
 html {
     margin: 0 0;
     padding: 0 0;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--black);
-    color: #ececec;
-    text-decoration: none;
+    background-color: var(--white);
+    color: #000000;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 20rem 30rem;
+}
 
 .navbar {
     margin-top: 1rem;
-    background-color: var(--light-grey);
+    background-color: var(--light-white);
     width: 13.2rem;
     height: 95vh;
     align-items: center;
     border-radius: 40px;
-    inset: 0px 0px 20px 10px rgba(0, 0, 0, 0.6);
+    box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
     margin-left: 0.8rem;
+    position: sticky;
 
 }
 
@@ -41,11 +45,11 @@ html {
     font-weight: 100;
     gap: 0.5rem;
     text-decoration: none;
-    color: #ececec;
+    color: black;
 }
 
 .navbar a:hover {
-    color: var(--red);
+    color: var(--blue);
     padding-left: 4rem;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -59,6 +63,7 @@ html {
 .navbar .my-stock {
     background-color: #3198d4;
     border-radius: 50px;
+    color: var(--white);
 }
 
 .navbar .my-stock:hover {
@@ -79,5 +84,5 @@ html {
 }
 
 .title span {
-    color: var(--red);
+    color: var(--blue);
 }

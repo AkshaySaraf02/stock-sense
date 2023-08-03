@@ -4,7 +4,8 @@ import pickle
 from sklearn.preprocessing import MinMaxScaler
 from tensorflow import keras
 
-model = keras.models.load_model("Forecasting/stock_forecast_model.h5")
+model_path = "C:\\Users\\User\\Desktop\\StockSense\\Website\\Forecasting\\stock_forecast_model.h5"
+model = keras.models.load_model(model_path)
 scaler = MinMaxScaler()
 
 def pre_processing(df):

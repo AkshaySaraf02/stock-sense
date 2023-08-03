@@ -1,17 +1,17 @@
 :root {
-    --black: #010101;
-    --dark-grey: #000000;
-    --light-grey: #292929;
-    --red: #3198d4;
-    --box-shadow: 40px 10px 60px -60px rgb(0, 0, 0);
+    --white: #f6f6f9;
+    --light-white: #fff;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --blue: #3198d4;
+    --box-shadow: 0 2rem 3rem 1rem var(--color-light);
 }
 
 html {
     margin: 0 0;
     padding: 0 0;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--black);
-    color: #ececec;
+    background-color: var(--white);
+    color: #000000;
 }
 
 .container {
@@ -21,13 +21,12 @@ html {
 
 .navbar {
     margin-top: 1rem;
-    /*add in other css*/
-    background-color: var(--light-grey);
+    background-color: var(--light-white);
     width: 13.2rem;
     height: 95vh;
     align-items: center;
     border-radius: 40px;
-    inset: 0px 0px 20px 10px rgba(0, 0, 0, 0.6);
+    box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
     margin-left: 0.8rem;
     position: sticky;
@@ -46,11 +45,11 @@ html {
     font-weight: 100;
     gap: 0.5rem;
     text-decoration: none;
-    color: #ececec;
+    color: black;
 }
 
 .navbar a:hover {
-    color: var(--red);
+    color: var(--blue);
     padding-left: 4rem;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -64,6 +63,7 @@ html {
 .navbar .dashboard {
     background-color: #3198d4;
     border-radius: 50px;
+    color: var(--white);
 }
 
 .navbar .dashboard:hover {
@@ -84,16 +84,18 @@ html {
 }
 
 .title span {
-    color: var(--red);
+    color: var(--blue);
 }
 
 .stock-selector {
     display: flex;
     align-items: center;
-    height: 5rem;
+    height: 3rem;
     width: max-content;
     justify-content: center;
     gap: 1rem;
+    color: var(--blue);
+    font-weight: bold;
 }
 
 .stock-selector .add-my-stocks {
@@ -106,6 +108,14 @@ html {
     font-family: "Poppins", "Sans-serif";
     font-weight: bold;
     gap: 5px;
+    background-color: var(--light-white);
+    color: black;
+    transition: all 0.3s ease;
+    box-shadow: 0 1.5rem 2.5rem var(--color-light);
+}
+
+.stock-selector .add-my-stocks:hover {
+    box-shadow: none;
 }
 
 .stock-selector select {
@@ -114,7 +124,8 @@ html {
     font-size: large;
     background-color: rgb(31, 30, 30);
     border-radius: 20px;
-    color: #ececec;
+    color: black;
+    background-color: var(--light-white);
 }
 
 .stock-selector button {
@@ -123,21 +134,27 @@ html {
 }
 
 .stock-selector button:hover {
-    color: var(--red)
+    color: var(--blue)
 }
 
 .ts-plot {
     overflow: hidden;
-    border: 1px solid grey;
-    background-color: var(--light-grey);
+    border: 1px solid white;
+    background-color: var(--light-white);
     margin-top: 0.5rem;
     height: 18rem;
     width: 70vw;
     border-radius: 24px;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+.ts-plot:hover {
+    box-shadow: none;
 }
 
 .stock-name {
-    color: var(--red);
+    color: var(--blue);
 }
 
 .info-cards {
@@ -149,15 +166,22 @@ html {
 .info-cards h1 {
     padding-left: 2rem;
     padding-top: 0rem;
+    color: var(--blue);
 }
 
 .info-cards .stats {
-    background-color: var(--light-grey);
+    background-color: var(--light-white);
     margin-top: 2rem;
     border-radius: 24px;
     padding: 0.1rem 0px 0.4rem 0.1rem;
     width: 35vw;
     margin-right: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+.info-cards .stats:hover {
+    box-shadow: none;
 }
 
 .info-cards .stats ul {
@@ -176,20 +200,28 @@ html {
     font-size: large;
     padding-left: 3rem;
     text-align: center;
+    color: var();
 }
 
 .info-cards .stats span {
     font-size: 0.9rem;
-    padding-left: 12rem;
+    padding-left: 8rem;
+    color: #000000;
 }
 
 
 .info-cards .preds {
-    background-color: var(--light-grey);
+    background-color: var(--light-white);
     margin-top: 2rem;
     border-radius: 24px;
     padding: 0.1rem 0px 0.4rem 0.1rem;
     width: 35vw;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+.info-cards .preds:hover {
+    box-shadow: none;
 }
 
 .info-cards .preds .forecast-text {
@@ -204,20 +236,23 @@ html {
     border-radius: 2rem;
     font-size: large;
     padding-left: 1rem;
-    background-color: lightgrey;
+    background-color: var(--light-white);
+    border: 0.8px solid black;
     font-weight: bold;
     font-style: "Poppins", "Sans-serif";
 }
 
 .info-cards .preds .forecast-text .submit {
     width: 4rem;
-    border: black;
+    border: white;
     height: 1.5rem;
     border-radius: 2rem;
     font-style: "Poppins", "Sans-serif";
     cursor: pointer;
-    background-color: lightgrey;
+    background-color: var(--light-white);
+    border: 0.8px solid black;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 .info-cards .preds .forecast-text .submit:hover {
@@ -229,6 +264,6 @@ html {
     /* margin-left: 5rem;*/
     margin-top: 3rem;
     padding-left: 7.6rem;
-
+    color: black;
     font-size: 60px;
 }
