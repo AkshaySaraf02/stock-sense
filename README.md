@@ -24,7 +24,7 @@ Navigation is smooth with a sidebar for Dashboard, My Stocks, News, and Log In.
 
 ### Dashboard
 <p align="left">
-  <img src="Forecast.gif" width="650">
+  <img src="Thumbnails/Forecast.gif" width="650">
 </p>
 
 <div align="center">
@@ -33,7 +33,7 @@ Navigation is smooth with a sidebar for Dashboard, My Stocks, News, and Log In.
 </div>
 
 <p align="center">
-  <img src="News.gif" width="650">
+  <img src="Thumbnails/News.gif" width="650">
 </p>
 
 <div align="right">
@@ -42,7 +42,7 @@ Navigation is smooth with a sidebar for Dashboard, My Stocks, News, and Log In.
 </div>
 
 <p align="right">
-  <img src="Stock List.png" width="650">
+  <img src="Thumbnails/Stock List.png" width="650">
 </p>
 
 ## Goals
@@ -66,14 +66,14 @@ Navigation is smooth with a sidebar for Dashboard, My Stocks, News, and Log In.
 ### Forecast Model
 
 <p align="left">
-  <img src="Testing.png" width="1000">
-  <img src="Validation.png" width="300">  
+  <img src="Thumbnails/Testing.png" width="1000">
+  <img src="Thumbnails/Validation.png" width="300">  
 </p>
 
 ### News Sentiment Model
 
 <p align="left">
-  <img src="News Sentiment Report.png" width="500">
+  <img src="Thumbnails/News Sentiment Report.png" width="500">
 </p>
 
 
