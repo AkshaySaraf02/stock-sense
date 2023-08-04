@@ -54,12 +54,12 @@ Navigation is smooth with a sidebar for Dashboard, My Stocks, News, and Log In.
 
 ## Technical Aspect
 
-- **Data Collection:** Utilized the `pandas_datareader` API to fetch stock price data from the past 2 years along with stock names. Cleaned and converted the data for further analysis.
-- **Data Storage:** Employed the Firebase Database to store and manage collected stock data. Functions like `add_stocks_data()` to add new stocks data and `update_database()` to subsequently update the data i.e facilitated data storage and updates.
-- **Web Scraping:** Implemented real-time web scraping to extract the latest top 5 headlines from `economictimes.indiatimes.com` for relevant financial news.
-- **Data Science:** Trained a News Sentiment NLP Model on a dataset of over 200k headlines, achieving an accuracy of more than 76%. Employed a Multinomial Naive Bayes Classifier and validated the model's performance on real data.
-- **Forecasting:** Developed a Multi Stacked LSTM-based model for stock price forecasting. The model, trained on dataset of past 12-years stock prices, demonstrated low RMSE and high accuracy.
-- **Integration with Website:** Integrated the project with a Flask-based website. The website fetches stock tickers for a dropdown menu, displays stock price data using Google Charts, Forecasts stock prices and presents News Headlines with sentiment analysis results based on user queries.
+- **Data Collection 📋:** Utilized the `pandas_datareader` API to fetch stock price data from the past 2 years along with stock names. Cleaned and converted the data for further analysis.
+- **Data Storage 📦:** Employed the Firebase Database to store and manage collected stock data. Functions like `add_stocks_data()` to add new stocks data and `update_database()` to subsequently update the data i.e facilitated data storage and updates.
+- **Web Scraping 🔍:** Implemented real-time web scraping to extract the latest top 5 headlines from `economictimes.indiatimes.com` for relevant financial news.
+- **News Sentiment Analysis 📰:** Trained a News Sentiment NLP Model on a dataset of over 200k headlines, achieving an accuracy of more than 76%. Employed a Multinomial Naive Bayes Classifier and validated the model's performance on real data.
+- **Forecasting 📉:** Developed a Multi Stacked LSTM-based model for stock price forecasting. The model, trained on dataset of past 12-years stock prices, demonstrated low RMSE and high accuracy.
+- **Integration with Website 🧩:** Integrated the project with a Flask-based website. The website fetches stock tickers for a dropdown menu, displays stock price data using Google Charts, Forecasts stock prices and presents News Headlines with sentiment analysis results based on user queries.
 
 ## Testing & Validation 
 
@@ -102,5 +102,5 @@ To set up the project locally, follow these steps:
 
 ## License
 
-This project is licensed under the [License Name] License. You can find more details in the `LICENSE` file.
+This project is licensed under the [GNU] License. You can find more details in the `LICENSE` file.
 
