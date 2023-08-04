@@ -102,5 +102,5 @@ To set up the project locally, follow these steps:
 
 ## License
 
-This project is licensed under the [GNU](LICENSE.md) License. You can find more details in the `LICENSE` file.
+This project is licensed under the [GNU](LICENSE) License. You can find more details in the `LICENSE` file.
 
