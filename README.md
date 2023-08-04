@@ -7,8 +7,7 @@ Your ultimate AI Trading app, Elevate your trading game with precise stock price
 - [User Interface](#user-interface)
 - [Goals](#goals)
 - [Technical Aspect](#technical-aspect)
-- [Testing & Validation](#Testing-&-Validation)
-
+- [Testing & Validation](#testing--validation)
 - [Installation](#installation)
 - [To Do](#to-do)
 - [Technologies Used](#technologies-used)
@@ -62,7 +61,7 @@ Navigation is smooth with a sidebar for Dashboard, My Stocks, News, and Log In.
 - **Forecasting:** Developed a Multi Stacked LSTM-based model for stock price forecasting. The model, trained on dataset of past 12-years stock prices, demonstrated low RMSE and high accuracy.
 - **Integration with Website:** Integrated the project with a Flask-based website. The website fetches stock tickers for a dropdown menu, displays stock price data using Google Charts, Forecasts stock prices and presents News Headlines with sentiment analysis results based on user queries.
 
-### Testing & Validation 
+## Testing & Validation 
 <p align="left">
   <img src="Testing.png" width="1000">
 </p>
@@ -70,7 +69,6 @@ Navigation is smooth with a sidebar for Dashboard, My Stocks, News, and Log In.
 <p align="center">
   <img src="Validation.png" width="300">
 </p>
-
 
 
 ## Installation
