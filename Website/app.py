@@ -7,7 +7,7 @@ from Forecasting.forecast import forecast
 from News.newsScraping import fetch_analyse_sentiment
 
 def initFirebase():
-    cred = credentials.Certificate("../confidential/admin.json")
+    cred = credentials.Certificate("../../Folders/confidential/admin.json")
     firebase_admin.initialize_app(cred)
     db = firestore.client()
     print("Successfully deployed Firebase.")
