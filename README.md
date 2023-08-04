@@ -82,9 +82,9 @@ Navigation is smooth with a sidebar for Dashboard, My Stocks, News, and Log In.
 To set up the project locally, follow these steps:
 
 1. Clone the repository from [here.](https://github.com/AkshaySaraf02/stock-sense).
-2. Install required Python packages using `pip install -r requirements.txt`.
+2. Install required Python packages using ```pip install -r requirements.txt```.
 3. Configure Firebase credentials for data storage.
-4. Run the Flask server using `python app.py`.
+4. Run the Flask server using ```python app.py```.
 
 ## To Do
 
