@@ -62,12 +62,18 @@ Navigation is smooth with a sidebar for Dashboard, My Stocks, News, and Log In.
 - **Integration with Website:** Integrated the project with a Flask-based website. The website fetches stock tickers for a dropdown menu, displays stock price data using Google Charts, Forecasts stock prices and presents News Headlines with sentiment analysis results based on user queries.
 
 ## Testing & Validation 
+
+### Forecast Model
+
 <p align="left">
   <img src="Testing.png" width="1000">
+  <img src="Validation.png" width="300">  
 </p>
 
-<p align="center">
-  <img src="Validation.png" width="300">
+### News Sentiment Model
+
+<p align="left">
+  <img src="News Sentiment Report.png" width="500">
 </p>
 
 
@@ -75,16 +81,15 @@ Navigation is smooth with a sidebar for Dashboard, My Stocks, News, and Log In.
 
 To set up the project locally, follow these steps:
 
-1. Clone the repository from [GitHub repo link].
+1. Clone the repository from [here.](https://github.com/AkshaySaraf02/stock-sense).
 2. Install required Python packages using `pip install -r requirements.txt`.
 3. Configure Firebase credentials for data storage.
 4. Run the Flask server using `python app.py`.
-5. Access the dashboard through the provided URL.
 
 ## To Do
 
 - Enhance the user interface for better visualization and interaction.
-- Explore additional machine learning models for sentiment analysis and compare results.
+- Explore additional machine learning models for sentiment analysis & forecasting and compare results.
 - Implement real-time data streaming for more up-to-date stock information.
 
 ## Technologies Used
@@ -92,11 +97,10 @@ To set up the project locally, follow these steps:
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Python, Flask
 - **Database:** Firebase
-- **Machine Learning:** TensorFlow, SciKit Learn
-- **Web Scraping:** Beautiful Soup
+- **Machine Learning:** TensorFlow, Keras, SciKit Learn
+- **Web Scraping:** Beautiful Soup, requests
 
 ## License
 
 This project is licensed under the [License Name] License. You can find more details in the `LICENSE` file.
 
-For more information and detailed instructions, please refer to the project's [GitHub repository](GitHub repo link).
